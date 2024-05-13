@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background colour change using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="text"></div>
+    <button onclick="return colourchange()">Click here to change the Background</button>
+    
+</body>
+<script>
+    function colourchange(){
+        var body=document.body;
+
+        body.classList.toggle("light-theme");
+        document.getElementById("text").innerHTML="This is a light theme."
+        body.classList.toggle("dark-theme");
+        if(body.classList.contains("dark-theme"))
+        document.getElementById("text").innerHTML="This is a dark theme."
+    }
+</script>
+</html>
