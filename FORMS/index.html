@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <h1>JavaScript Form Validation</h1>
+    <form action="get">
+        <div class="form-design" id="name"> <!--Difference between div and span tag is that div always starts from 
+            next line whereas sapn starts from same line. -->
+        Name : <input type="text" name="fname"><span class="form-error"></span>
+        </div>
+        <div class="form-design" id="email"> <!--Difference between div and span tag is that div always starts from 
+            next line whereas sapn starts from same line. -->
+        Email : <input type="email" name="email-id"><span class="form-error"></span>
+        </div>   
+        <div class="form-design" id="phone"> <!--Difference between div and span tag is that div always starts from 
+            next line whereas sapn starts from same line. -->
+        Phone : <input type="phone" name="phone-number"><span class="form-error"></span>
+        </div>
+        <div class="form-design" id="password"> <!--Difference between div and span tag is that div always starts from 
+            next line whereas sapn starts from same line. -->
+        Password : <input type="password" name="password"><span class="form-error"></span>
+        </div>
+        <div class="form-design" id="cnf-password"> <!--Difference between div and span tag is that div always starts from 
+            next line whereas sapn starts from same line. -->
+        Confirm Password : <input type="password" name="cnf-password"><span class="form-error"></span>
+        </div>  
+        <input type="submit" class="button" value="submit">
+    </form>
+</body>
+</html>

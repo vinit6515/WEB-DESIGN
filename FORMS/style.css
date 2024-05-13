@@ -1,0 +1,28 @@
+body{
+    padding: 10px 50px;/* top se 50 left right se 10 */
+}
+.form-design{
+    font-size: 20px;
+}
+.form-design input{
+    width: 50%;
+    padding: 12px 20px;
+    border: 1px solid black;
+    margin:14px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.form-error{
+    color: red;
+    font-weight: bold;
+}
+.button{
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    margin: 22px 22px ;
+
+}
