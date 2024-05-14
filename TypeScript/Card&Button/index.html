@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        text-align: center;
+    }
+    .card-container{
+        z-index: 1;
+        background-color: beige;
+        padding: 20px;
+        margin: 100px 10rem;
+        border-radius: 6px;
+        border: 1px solid black;
+        box-shadow: 5px 10px 5px 10px grey;
+    }
+    .card-button{
+        background-color: blueviolet;
+        color: antiquewhite;
+        border: 1px solid aqua;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .action-class{
+        margin-top: 100px;
+        visibility:hidden;
+    }
+</style>
+<body>
+    <div id="card" class="card-container">
+        <center><h1>Card Title</h1><br></center>
+        <div class="card-text">
+           <p> This is a sample Card to show user methods in typescript.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci voluptatibus minus distinctio a odit quis placeat delectus debitis quibusdam magnam ipsam iste magni quae, quam vitae iure perspiciatis necessitatibus.</p>
+            <button class="card-button" id="button">Click Here</button>
+        </div>
+    </div>
+    <div class="action-class" id="Action">Mouse is over the card</div>
+</body>
+<script src="script.js">
+</script>
+</html>

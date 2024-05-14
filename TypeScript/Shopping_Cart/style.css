@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-display{
+    list-style: none;
+    padding: 10px;
+    margin: 5vw;
+    border: 1px solid black;
+}
+.cart{
+    padding: 10px;
+    
+    border: 1px solid black;
+}

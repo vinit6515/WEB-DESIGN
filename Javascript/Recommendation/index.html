@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommedation</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+    .Recommendation.green{
+        background-color: green;
+        color: aliceblue;
+    }
+    .Recommendation.red{
+        background-color:red;
+        color: aliceblue;
+    }
+    .temp{
+        margin: 12px 4px;
+    }
+    .temp input{
+        border: 1px solid rgb(254, 0, 9);
+        border-radius: 3px;
+        padding: 3px;
+        height: auto;
+        box-shadow: 0.5px 0.5px 0.5px 0.5px gray;
+    }
+</style>
+<body>
+    <div class="temp">
+   Input : <input type="text" class="value" id="abc" required>
+    </div>
+   
+   <button onclick="validatingInput()"> Submit</button>
+   <div class="Recommendation" id="recommendation">
+</div>
+   
+</body>
+<script>
+    let recommened = [];
+    var counter = 0 ;
+    function validatingInput(){
+        var check = document.getElementById("abc").value;
+        var coloring = document.getElementById("recommendation");
+        coloring.classList.toggle("green");
+        document.getElementById("recommendation").innerHTML=check;
+        coloring.classList.toggle("red");
+        recommened[counter]=check;
+        counter++;
+        // var flag=0,item;
+        // for (item in recommened){
+        //     if(item===check){
+        //         flag=1;
+        //         break;
+        //     }
+        // }
+        // if(flag===1){
+            
+        // }  
+    }
+</script>
+</html>

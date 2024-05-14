@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <button id = "button" onclick="cookies()">Cookies</button>
+    <div id="cookies-answer" class = "answer">
+    </div>
+</body>
+<script>
+    function cookies(){
+        var selection = prompt("Do you wish to accept cookies ? ", "Accept");
+        if(selection=="Accept"){
+            const element = selection;
+            document.getElementById("cookies-answer").innerHTML=selection;
+        }
+        else{
+            document.getElementById("cookies-answer").innerHTML="Cookies are not selected";
+        }
+    }
+</script>
+</html>
