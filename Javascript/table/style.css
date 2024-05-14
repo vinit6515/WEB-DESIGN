@@ -1,0 +1,18 @@
+body{
+    
+}
+table,td,th{
+    border: 1px solid;
+    padding: 10px;
+    font-size: medium;
+    width: 100%S;
+}
+table{
+    border-collapse: collapse;
+}
+tr:nth-child(odd){
+    background-color: aqua;
+}
+tr:nth-child(even){
+    background-color: red;
+}
