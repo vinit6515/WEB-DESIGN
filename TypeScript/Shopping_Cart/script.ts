@@ -6,7 +6,7 @@ var count3:number=0;
     }
     function add2():void{
         count2=count2+1;
-        document.getElementById("disp-item2").innerHTML=`Quantity : ${count2}`
+        document.getElementById("disp-item2").innerHTML: HTMLElement| null=`Quantity : ${count2}`:String;
     }
     function add3():void{
         count3=count3+1;
