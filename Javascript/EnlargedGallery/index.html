@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .image-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .image-3 img{
+        width: 300px;
+        height: auto;
+        padding: 50px;
+        cursor: pointer;
+    }
+    .enlarged-img{
+        position: relative;
+        margin: 2rem 5rem;
+    }
+</style>
+<body>
+    <div  id="selection" class="image-3">
+    <img src="./Image1.png" alt="Image1" onclick="toggleEnlargedImade(this)">
+    <img src="./Image2.png" alt="Image2" onclick="toggleEnlargedImade(this)">
+    <img src="./Image3.png" alt="Image3" onclick="toggleEnlargedImade(this)">
+    </div>
+    <div id="insertion" class="enlarged-img">
+        <img  id="insertionImage" src="" alt="">
+    </div>
+</body>
+<script>
+    function toggleEnlargedImade(image){
+        const selectedImage=document.getElementById("insertion");
+        const galleryImage=document.getElementById("insertionImage");
+        if(image){
+            galleryImage.src=image.src;
+            selectedImage.style.display='block';
+        }
+        else{
+            selectedImage.style.display='none';
+        }
+    }
+</script>
+</html>

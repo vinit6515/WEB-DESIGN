@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Exceeds Scroll ALERT</title>
+</head>
+<style>
+    body{
+        margin-top: 500px;
+        height: 2000px;
+    }
+    
+</style>
+<body>
+    We are checking the scroll limit .If scroll is greater than <span class="value"></span> it will pop an alert.
+</body>
+<script>
+    window.addEventListener('scroll',function(){
+        var position = window.scrollY;
+        var max= 500;
+        document.getElementsByClassName("value")[0].innerHTML=position;
+        if(position>max){
+            alert("You have exceeded the scroll limit.");
+        }
+    })
+</script>
+</html>
