@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazyLoader</title>
+</head>
+<body>
+    <div id="main-id">Lazy Page Loading ....</div>
+</body>
+<script>
+    let element=document.getElementById("main-id");
+    let s=0;
+    setInterval(effect,2000);
+    function effect(){
+        element.innerHTML="Page Loaded Succesfully"
+    }
+</script>
+</html>

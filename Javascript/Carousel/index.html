@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+</head>
+<style>
+    .main img{
+
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+<body>
+    <div class="main" id="main-id">
+        <img id="insertion" src="" alt="">
+    </div>
+</body>
+<script>
+    let img_dest=document.getElementById("insertion")
+let arr =["Image1.jpg", "Image2.jpg","Image3.jpg"];
+let s =0;
+setInterval(effect,2000);
+function effect(){
+    img_dest.src=arr[s];
+    s=(s+1)%arr.length;
+}
+</script>
+</html>
